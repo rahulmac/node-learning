@@ -14,3 +14,14 @@ body{
 #para1{
     color : black
 }
+ul
+{ 
+overflow-x:hidden;
+white-space:nowrap; 
+height: 1em;
+width: 100%;
+} 
+ul li {
+    display: inline;
+    padding: 5px;
+}

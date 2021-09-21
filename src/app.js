@@ -4,7 +4,7 @@ const hbs = require('hbs')
 const request = require('request')
 
 const app = express()
-const port = process.env.PORT || 3002
+const port = process.env.PORT || 3006
 
 //domain name - app.com
 // url app.com/about
@@ -27,7 +27,7 @@ hbs.registerPartials(partialsPath)
 
 // to customize the server to server any particular folder or file
 //setup static directory to serve
-app.use(express.static(publicDirectoryPath))
+app.use(express.static(publicDirectoryPath)) 
 
 app.get('/', (req, res) => {
     res.render('index', {
